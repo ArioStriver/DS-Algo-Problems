@@ -30,7 +30,7 @@ METHOD:(USING STACK)
 
 TIME: O(N), where N is the total number of elements.
 
-SPACE: O(N).
+SPACE: O(k).
 */
 
 class Solution {
