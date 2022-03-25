@@ -35,7 +35,7 @@ costs.length is even.
 1 <= aCosti, bCosti <= 1000
 
 
-METHOD:(SORTING)
+METHOD:(SORTING)(GREEDY)
 	
 TIME: O(NlogN), for sorting the array.
 
