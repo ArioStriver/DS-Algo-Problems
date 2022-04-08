@@ -26,8 +26,15 @@ kthLargest.add(4);   // return 8
 
 
 METHOD:(USING MINHEAP)
+	APPROACH:
+		1. Creating a heap of size k.
+		pq in java is self-order queue by elements' natural order, smallest at head, largest at rear. by defining pq in k size, the head of pq is kth largest 
+		element.
 
-TIME: O(N*log(k)+M*log(k)), where N is the no. of elements in the nums, requires O(logk) time to build the minHeap, and  if there are M no. of calls to add function
+		2. Also we are checking when adding new element, the smallest element(the current kth largest) will pop if new added element is larger. (nothing required 
+		   if added element is smaller than kth largest). So the head of pq will always be kth largest.
+
+TIME: O(N*log(k) + M*log(k)), where N is the no. of elements in the nums, requires O(logk) time to build the minHeap, and  if there are M no. of calls to add function
       that means M calls to add() costs O(M*log(k)).
 
 SPACE: O(K), bcz our heap is of size k.
